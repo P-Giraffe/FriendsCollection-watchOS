@@ -27,6 +27,24 @@ class CharacterDirectory: ObservableObject {
     public func getMaxId() -> Int {
         return _maxId
     }
+
+    public func filter(season:Int, main:Int) -> [Character] {
+        var filteredCharacters:[Character]
+        
+        switch season {
+        case 0: filteredCharacters = _charactersList
+        case -1: filteredCharacters = _charactersList.filter {$0._isMain}
+            if main == 1 {
+                filteredCharacters = _charactersList.filter {$0._isMain}
+            }
+            if main == 2 {
+                filteredCharacters = _charactersList.filter {!$0._isMain}
+            }
+        default: filteredCharacters = _charactersList.filter {$0._season == season}
+        }
+        
+        return filteredCharacters
+    }
     
     public func addCharacter(newCharacter:Character) {
         _charactersList.append(newCharacter)

@@ -57,21 +57,8 @@ struct MainContent: View {
                 }
                 .frame(height: 250)
                 LazyVGrid(columns: _friendsGrid){
-                    ForEach(_friendsCollection.getCharacters(), id: \._id) {value in
-                        switch _season {
-                        case 0: CharacterPresenter(content:value)
-                        case -1:
-                            if _mainCharacters == 1 && value._isMain {
-                                CharacterPresenter(content:value)
-                            }
-                            if _mainCharacters == 2 && !value._isMain {
-                                CharacterPresenter(content:value)
-                            }
-                        default:
-                            if _season == value._season {
-                                CharacterPresenter(content:value)
-                            }
-                        }
+                    ForEach(_friendsCollection.filter(season: _season, main: _mainCharacters), id: \._id) {value in
+                            CharacterPresenter(content:value)
                     }
                 }.padding(.all, 10)
             }
@@ -94,21 +81,8 @@ struct MainContent: View {
                         .frame(height: 250)
                         .padding(/*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                     LazyVGrid(columns: _friendsGrid){
-                        ForEach(_friendsCollection.getCharacters(), id: \._id) {value in
-                            switch _season {
-                            case 0: CharacterPresenter(content:value)
-                            case -1:
-                                if _mainCharacters == 1 && value._isMain {
-                                    CharacterPresenter(content:value)
-                                }
-                                if _mainCharacters == 2 && !value._isMain {
-                                    CharacterPresenter(content:value)
-                                }
-                            default:
-                                if _season == value._season {
-                                    CharacterPresenter(content:value)
-                                }
-                            }
+                        ForEach(_friendsCollection.filter(season: _season, main: _mainCharacters), id: \._id) {value in
+                                CharacterPresenter(content:value)
                         }
                     }.padding(.all, 10)
                 }
