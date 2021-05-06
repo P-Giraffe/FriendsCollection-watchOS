@@ -8,6 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		E64397912526731400FF8434 /* CharacterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64397902526731400FF8434 /* CharacterPresenter.swift */; };
+		E67A5636264301320011DD3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E67A5635264301320011DD3A /* Assets.xcassets */; };
+		E67A563D264301330011DD3A /* FriendsCollection-watchOSApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E67A563C264301330011DD3A /* FriendsCollection-watchOSApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E67A5644264301330011DD3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67A5643264301330011DD3A /* ContentView.swift */; };
+		E67A5646264301330011DD3A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67A5645264301330011DD3A /* NotificationController.swift */; };
+		E67A5648264301330011DD3A /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67A5647264301330011DD3A /* NotificationView.swift */; };
+		E67A564A264301330011DD3A /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67A5649264301330011DD3A /* ComplicationController.swift */; };
+		E67A564C2643013D0011DD3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E67A564B2643013D0011DD3A /* Assets.xcassets */; };
+		E67A564F2643013D0011DD3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E67A564E2643013D0011DD3A /* Preview Assets.xcassets */; };
+		E67A56542643013E0011DD3A /* FriendsCollection-watchOSApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E67A5633264301280011DD3A /* FriendsCollection-watchOSApp.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E67A5667264301D80011DD3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6D59FDA25260E8800054C51 /* Assets.xcassets */; };
+		E67A5668264301D80011DD3A /* CharacterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64397902526731400FF8434 /* CharacterPresenter.swift */; };
+		E67A5669264301D80011DD3A /* CharacterDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D5A00D25260FBA00054C51 /* CharacterDirectory.swift */; };
+		E67A566A264301D80011DD3A /* FriendsCollectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D59FD625260E8400054C51 /* FriendsCollectionApp.swift */; };
+		E67A566B264301D80011DD3A /* DataConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D5A024252621D400054C51 /* DataConnector.swift */; };
+		E67A566C264301D80011DD3A /* FriendsCharacters.json in Resources */ = {isa = PBXBuildFile; fileRef = E6D5A01F2526213700054C51 /* FriendsCharacters.json */; };
+		E67A566D264301D80011DD3A /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D5A00525260ECC00054C51 /* Character.swift */; };
 		E6B52A1B25270FE7001C7987 /* CharacterEditForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B52A1A25270FE7001C7987 /* CharacterEditForm.swift */; };
 		E6D59FD725260E8400054C51 /* FriendsCollectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D59FD625260E8400054C51 /* FriendsCollectionApp.swift */; };
 		E6D59FD925260E8400054C51 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D59FD825260E8400054C51 /* ContentView.swift */; };
@@ -22,6 +38,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		E67A563E264301330011DD3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6D59FCB25260E8400054C51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E67A563B264301330011DD3A;
+			remoteInfo = "FriendsCollection-watchOSApp Extension";
+		};
+		E67A56522643013E0011DD3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6D59FCB25260E8400054C51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E67A5632264301280011DD3A;
+			remoteInfo = "FriendsCollection-watchOSApp";
+		};
 		E6D59FE525260E8900054C51 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E6D59FCB25260E8400054C51 /* Project object */;
@@ -38,8 +68,45 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E67A56552643013E0011DD3A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E67A56542643013E0011DD3A /* FriendsCollection-watchOSApp.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E67A56582643013E0011DD3A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E67A563D264301330011DD3A /* FriendsCollection-watchOSApp Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		E64397902526731400FF8434 /* CharacterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPresenter.swift; sourceTree = "<group>"; };
+		E67A5633264301280011DD3A /* FriendsCollection-watchOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FriendsCollection-watchOSApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E67A5635264301320011DD3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E67A5637264301320011DD3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E67A563C264301330011DD3A /* FriendsCollection-watchOSApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FriendsCollection-watchOSApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E67A5643264301330011DD3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E67A5645264301330011DD3A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		E67A5647264301330011DD3A /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		E67A5649264301330011DD3A /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		E67A564B2643013D0011DD3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E67A564E2643013D0011DD3A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E67A56502643013D0011DD3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E67A56512643013D0011DD3A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		E6B52A1A25270FE7001C7987 /* CharacterEditForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterEditForm.swift; sourceTree = "<group>"; };
 		E6D59FD325260E8400054C51 /* FriendsCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendsCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D59FD625260E8400054C51 /* FriendsCollectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCollectionApp.swift; sourceTree = "<group>"; };
@@ -60,6 +127,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E67A5639264301330011DD3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E6D59FD025260E8400054C51 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -84,12 +158,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E67A5634264301280011DD3A /* FriendsCollection-watchOSApp */ = {
+			isa = PBXGroup;
+			children = (
+				E67A5635264301320011DD3A /* Assets.xcassets */,
+				E67A5637264301320011DD3A /* Info.plist */,
+			);
+			path = "FriendsCollection-watchOSApp";
+			sourceTree = "<group>";
+		};
+		E67A5640264301330011DD3A /* FriendsCollection-watchOSApp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E67A5643264301330011DD3A /* ContentView.swift */,
+				E67A5645264301330011DD3A /* NotificationController.swift */,
+				E67A5647264301330011DD3A /* NotificationView.swift */,
+				E67A5649264301330011DD3A /* ComplicationController.swift */,
+				E67A564B2643013D0011DD3A /* Assets.xcassets */,
+				E67A56502643013D0011DD3A /* Info.plist */,
+				E67A56512643013D0011DD3A /* PushNotificationPayload.apns */,
+				E67A564D2643013D0011DD3A /* Preview Content */,
+			);
+			path = "FriendsCollection-watchOSApp Extension";
+			sourceTree = "<group>";
+		};
+		E67A564D2643013D0011DD3A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E67A564E2643013D0011DD3A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		E6D59FCA25260E8400054C51 = {
 			isa = PBXGroup;
 			children = (
 				E6D59FD525260E8400054C51 /* FriendsCollection */,
 				E6D59FE725260E8900054C51 /* FriendsCollectionTests */,
 				E6D59FF225260E8900054C51 /* FriendsCollectionUITests */,
+				E67A5634264301280011DD3A /* FriendsCollection-watchOSApp */,
+				E67A5640264301330011DD3A /* FriendsCollection-watchOSApp Extension */,
 				E6D59FD425260E8400054C51 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,6 +208,8 @@
 				E6D59FD325260E8400054C51 /* FriendsCollection.app */,
 				E6D59FE425260E8900054C51 /* FriendsCollectionTests.xctest */,
 				E6D59FEF25260E8900054C51 /* FriendsCollectionUITests.xctest */,
+				E67A5633264301280011DD3A /* FriendsCollection-watchOSApp.app */,
+				E67A563C264301330011DD3A /* FriendsCollection-watchOSApp Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -191,6 +301,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E67A5632264301280011DD3A /* FriendsCollection-watchOSApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E67A565C2643013E0011DD3A /* Build configuration list for PBXNativeTarget "FriendsCollection-watchOSApp" */;
+			buildPhases = (
+				E67A5631264301280011DD3A /* Resources */,
+				E67A56582643013E0011DD3A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E67A563F264301330011DD3A /* PBXTargetDependency */,
+			);
+			name = "FriendsCollection-watchOSApp";
+			productName = "FriendsCollection-watchOSApp";
+			productReference = E67A5633264301280011DD3A /* FriendsCollection-watchOSApp.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		E67A563B264301330011DD3A /* FriendsCollection-watchOSApp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E67A565B2643013E0011DD3A /* Build configuration list for PBXNativeTarget "FriendsCollection-watchOSApp Extension" */;
+			buildPhases = (
+				E67A5638264301330011DD3A /* Sources */,
+				E67A5639264301330011DD3A /* Frameworks */,
+				E67A563A264301330011DD3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FriendsCollection-watchOSApp Extension";
+			productName = "FriendsCollection-watchOSApp Extension";
+			productReference = E67A563C264301330011DD3A /* FriendsCollection-watchOSApp Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		E6D59FD225260E8400054C51 /* FriendsCollection */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6D59FF825260E8900054C51 /* Build configuration list for PBXNativeTarget "FriendsCollection" */;
@@ -198,10 +342,12 @@
 				E6D59FCF25260E8400054C51 /* Sources */,
 				E6D59FD025260E8400054C51 /* Frameworks */,
 				E6D59FD125260E8400054C51 /* Resources */,
+				E67A56552643013E0011DD3A /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E67A56532643013E0011DD3A /* PBXTargetDependency */,
 			);
 			name = FriendsCollection;
 			productName = FriendsCollection;
@@ -250,9 +396,15 @@
 		E6D59FCB25260E8400054C51 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					E67A5632264301280011DD3A = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					E67A563B264301330011DD3A = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					E6D59FD225260E8400054C51 = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
@@ -282,11 +434,32 @@
 				E6D59FD225260E8400054C51 /* FriendsCollection */,
 				E6D59FE325260E8900054C51 /* FriendsCollectionTests */,
 				E6D59FEE25260E8900054C51 /* FriendsCollectionUITests */,
+				E67A5632264301280011DD3A /* FriendsCollection-watchOSApp */,
+				E67A563B264301330011DD3A /* FriendsCollection-watchOSApp Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E67A5631264301280011DD3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E67A5636264301320011DD3A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E67A563A264301330011DD3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E67A564F2643013D0011DD3A /* Preview Assets.xcassets in Resources */,
+				E67A566C264301D80011DD3A /* FriendsCharacters.json in Resources */,
+				E67A5667264301D80011DD3A /* Assets.xcassets in Resources */,
+				E67A564C2643013D0011DD3A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E6D59FD125260E8400054C51 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -314,6 +487,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E67A5638264301330011DD3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E67A566D264301D80011DD3A /* Character.swift in Sources */,
+				E67A566A264301D80011DD3A /* FriendsCollectionApp.swift in Sources */,
+				E67A5646264301330011DD3A /* NotificationController.swift in Sources */,
+				E67A5668264301D80011DD3A /* CharacterPresenter.swift in Sources */,
+				E67A566B264301D80011DD3A /* DataConnector.swift in Sources */,
+				E67A5644264301330011DD3A /* ContentView.swift in Sources */,
+				E67A5669264301D80011DD3A /* CharacterDirectory.swift in Sources */,
+				E67A564A264301330011DD3A /* ComplicationController.swift in Sources */,
+				E67A5648264301330011DD3A /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E6D59FCF25260E8400054C51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -347,6 +536,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		E67A563F264301330011DD3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E67A563B264301330011DD3A /* FriendsCollection-watchOSApp Extension */;
+			targetProxy = E67A563E264301330011DD3A /* PBXContainerItemProxy */;
+		};
+		E67A56532643013E0011DD3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E67A5632264301280011DD3A /* FriendsCollection-watchOSApp */;
+			targetProxy = E67A56522643013E0011DD3A /* PBXContainerItemProxy */;
+		};
 		E6D59FE625260E8900054C51 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E6D59FD225260E8400054C51 /* FriendsCollection */;
@@ -360,6 +559,94 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		E67A56562643013E0011DD3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZYPVSX598R;
+				IBSC_MODULE = FriendsCollection_watchOSApp_Extension;
+				INFOPLIST_FILE = "FriendsCollection-watchOSApp/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.consulting.myjobly.FriendsCollection.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		E67A56572643013E0011DD3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZYPVSX598R;
+				IBSC_MODULE = FriendsCollection_watchOSApp_Extension;
+				INFOPLIST_FILE = "FriendsCollection-watchOSApp/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.consulting.myjobly.FriendsCollection.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		E67A56592643013E0011DD3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FriendsCollection-watchOSApp Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = ZYPVSX598R;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "FriendsCollection-watchOSApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.consulting.myjobly.FriendsCollection.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		E67A565A2643013E0011DD3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FriendsCollection-watchOSApp Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = ZYPVSX598R;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "FriendsCollection-watchOSApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.consulting.myjobly.FriendsCollection.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
 		E6D59FF625260E8900054C51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -607,6 +894,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E67A565B2643013E0011DD3A /* Build configuration list for PBXNativeTarget "FriendsCollection-watchOSApp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E67A56592643013E0011DD3A /* Debug */,
+				E67A565A2643013E0011DD3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E67A565C2643013E0011DD3A /* Build configuration list for PBXNativeTarget "FriendsCollection-watchOSApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E67A56562643013E0011DD3A /* Debug */,
+				E67A56572643013E0011DD3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E6D59FCE25260E8400054C51 /* Build configuration list for PBXProject "FriendsCollection" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
