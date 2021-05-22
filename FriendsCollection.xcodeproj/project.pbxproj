@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E64397912526731400FF8434 /* CharacterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64397902526731400FF8434 /* CharacterPresenter.swift */; };
+		E65EB5D02656C4CA0054C194 /* ComplicationsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65EB5CF2656C4CA0054C194 /* ComplicationsViews.swift */; };
 		E67A5636264301320011DD3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E67A5635264301320011DD3A /* Assets.xcassets */; };
 		E67A563D264301330011DD3A /* FriendsCollection-watchOSApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E67A563C264301330011DD3A /* FriendsCollection-watchOSApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E67A5644264301330011DD3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67A5643264301330011DD3A /* ContentView.swift */; };
@@ -95,6 +96,7 @@
 
 /* Begin PBXFileReference section */
 		E64397902526731400FF8434 /* CharacterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPresenter.swift; sourceTree = "<group>"; };
+		E65EB5CF2656C4CA0054C194 /* ComplicationsViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationsViews.swift; sourceTree = "<group>"; };
 		E67A5633264301280011DD3A /* FriendsCollection-watchOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FriendsCollection-watchOSApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67A5635264301320011DD3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E67A5637264301320011DD3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				E67A5643264301330011DD3A /* ContentView.swift */,
+				E65EB5CF2656C4CA0054C194 /* ComplicationsViews.swift */,
 				E67A5645264301330011DD3A /* NotificationController.swift */,
 				E67A5647264301330011DD3A /* NotificationView.swift */,
 				E67A5649264301330011DD3A /* ComplicationController.swift */,
@@ -497,6 +500,7 @@
 				E67A5668264301D80011DD3A /* CharacterPresenter.swift in Sources */,
 				E67A566B264301D80011DD3A /* DataConnector.swift in Sources */,
 				E67A5644264301330011DD3A /* ContentView.swift in Sources */,
+				E65EB5D02656C4CA0054C194 /* ComplicationsViews.swift in Sources */,
 				E67A5669264301D80011DD3A /* CharacterDirectory.swift in Sources */,
 				E67A564A264301330011DD3A /* ComplicationController.swift in Sources */,
 				E67A5648264301330011DD3A /* NotificationView.swift in Sources */,
