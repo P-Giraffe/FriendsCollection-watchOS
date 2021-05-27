@@ -24,6 +24,18 @@ class CharacterDirectory: ObservableObject {
         return _charactersList
     }
     
+    public func getNbCharacters() -> Int {
+        return _charactersList.count
+    }
+    
+    public func getNbMainCharacters() -> Int {
+        return _charactersList.filter {$0._isMain}.count
+    }
+    
+    public func getNbGuestCharacters() -> Int {
+        return _charactersList.filter {!$0._isMain}.count
+    }
+    
     public func getMaxId() -> Int {
         return _maxId
     }
