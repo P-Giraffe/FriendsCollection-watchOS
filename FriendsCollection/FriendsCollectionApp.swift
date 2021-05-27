@@ -22,6 +22,9 @@ struct FriendsCollectionApp: App {
             default: print("other")
             }
         }
+        #if os(watchOS)
+        WKNotificationScene(controller: NotificationController.self, category: "favorite")
+        #endif
     }
 }
 

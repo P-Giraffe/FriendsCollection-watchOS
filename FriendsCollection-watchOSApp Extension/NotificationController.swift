@@ -29,5 +29,24 @@ class NotificationController: WKUserNotificationHostingController<NotificationVi
         // This method is called when a notification needs to be presented.
         // Implement it if you use a dynamic notification interface.
         // Populate your dynamic notification interface as quickly as possible.
+        let center = UNUserNotificationCenter.current()
+        center.delegate = self
+        center.requestAuthorization(options: [.alert, .badge, .sound]) {
+            success, error in
+            if(success) {
+                print("authorization given")
+            } else if let error = error {
+                print(error.localizedDescription)
+            }
+        }
+    }
+}
+extension NotificationController: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        switch(response.actionIdentifier) {
+        case "add": print("Janice is in you favorites now !")
+        default: print("not identified")
+        }
+        completionHandler()
     }
 }

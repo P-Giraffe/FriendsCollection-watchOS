@@ -6,10 +6,14 @@
 //
 
 import SwiftUI
+import UserNotifications
 
 struct Menu: View {
     var body: some View {
         List {
+            NavigationLink(destination: SendNotification().navigationTitle("New Character")) {
+                Label("New Character", systemImage: "person")
+            }
             NavigationLink(destination: MainContent(_season: 0, _mainCharacters: 0).navigationTitle("All Characters")) {
                 Label("All Characters", systemImage: "person.3")
             }
@@ -30,6 +34,31 @@ struct Menu: View {
             }
         }
         .listStyle(EllipticalListStyle())
+    }
+}
+
+struct SendNotification: View {
+    let center = UNUserNotificationCenter.current()
+    
+    var body: some View {
+        Button("Send Notification") {
+            
+            let content = UNMutableNotificationContent()
+            content.title = "Oh my god !"
+            content.sound = UNNotificationSound.default
+            content.categoryIdentifier = "favorite"
+            
+            let action = UNNotificationAction(identifier: "add", title: "Favorite", options: .authenticationRequired)
+            
+            let category = UNNotificationCategory(identifier: "favorite", actions: [action], intentIdentifiers: [])
+            
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+            
+            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+            
+            center.setNotificationCategories([category])
+            center.add(request)
+        }
     }
 }
 
