@@ -1,4 +1,4 @@
-#SwiftUI - iPadOS Exercice: FriendsCollection App
+# SwiftUI - iPadOS Exercice: FriendsCollection App
 
 Application servant de base au cours SwiftUI et watchOS.
 
