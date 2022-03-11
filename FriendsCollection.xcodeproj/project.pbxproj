@@ -22,6 +22,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		E6D1B7A127DB373500EBAB6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6D1B79B27DB373500EBAB6A /* watchOS-Complication.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E65D0785264C70E7008B4190;
+			remoteInfo = "watchOS-Complication";
+		};
+		E6D1B7A327DB373500EBAB6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6D1B79B27DB373500EBAB6A /* watchOS-Complication.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E65D0794264C70E8008B4190;
+			remoteInfo = "watchOS-Complication WatchKit App";
+		};
+		E6D1B7A527DB373500EBAB6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6D1B79B27DB373500EBAB6A /* watchOS-Complication.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E65D07A0264C70EA008B4190;
+			remoteInfo = "watchOS-Complication WatchKit Extension";
+		};
 		E6D59FE525260E8900054C51 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E6D59FCB25260E8400054C51 /* Project object */;
@@ -41,6 +62,10 @@
 /* Begin PBXFileReference section */
 		E64397902526731400FF8434 /* CharacterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPresenter.swift; sourceTree = "<group>"; };
 		E6B52A1A25270FE7001C7987 /* CharacterEditForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterEditForm.swift; sourceTree = "<group>"; };
+		E6D1B79B27DB373500EBAB6A /* watchOS-Complication.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "watchOS-Complication.xcodeproj"; path = "../../watchOS-Complication/watchOS-Complication.xcodeproj"; sourceTree = "<group>"; };
+		E6D1B7A727DB373500EBAB6A /* watchOS-Complication WatchKit App */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "watchOS-Complication WatchKit App"; sourceTree = "<group>"; };
+		E6D1B7A827DB373500EBAB6A /* watchOS-Complication WatchKit Extension */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "watchOS-Complication WatchKit Extension"; sourceTree = "<group>"; };
+		E6D1B7A927DB373500EBAB6A /* watchOS-Complication */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "watchOS-Complication"; sourceTree = "<group>"; };
 		E6D59FD325260E8400054C51 /* FriendsCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendsCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D59FD625260E8400054C51 /* FriendsCollectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCollectionApp.swift; sourceTree = "<group>"; };
 		E6D59FD825260E8400054C51 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,9 +109,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E6D1B79A27DB36BC00EBAB6A /* Example-SolarSystem */ = {
+			isa = PBXGroup;
+			children = (
+				E6D1B7A927DB373500EBAB6A /* watchOS-Complication */,
+				E6D1B7A727DB373500EBAB6A /* watchOS-Complication WatchKit App */,
+				E6D1B7A827DB373500EBAB6A /* watchOS-Complication WatchKit Extension */,
+				E6D1B79B27DB373500EBAB6A /* watchOS-Complication.xcodeproj */,
+			);
+			path = "Example-SolarSystem";
+			sourceTree = "<group>";
+		};
+		E6D1B79C27DB373500EBAB6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6D1B7A227DB373500EBAB6A /* watchOS-Complication.app */,
+				E6D1B7A427DB373500EBAB6A /* watchOS-Complication WatchKit App.app */,
+				E6D1B7A627DB373500EBAB6A /* watchOS-Complication WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		E6D59FCA25260E8400054C51 = {
 			isa = PBXGroup;
 			children = (
+				E6D1B79A27DB36BC00EBAB6A /* Example-SolarSystem */,
 				E6D59FD525260E8400054C51 /* FriendsCollection */,
 				E6D59FE725260E8900054C51 /* FriendsCollectionTests */,
 				E6D59FF225260E8900054C51 /* FriendsCollectionUITests */,
@@ -277,6 +324,12 @@
 			mainGroup = E6D59FCA25260E8400054C51;
 			productRefGroup = E6D59FD425260E8400054C51 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E6D1B79C27DB373500EBAB6A /* Products */;
+					ProjectRef = E6D1B79B27DB373500EBAB6A /* watchOS-Complication.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E6D59FD225260E8400054C51 /* FriendsCollection */,
@@ -285,6 +338,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E6D1B7A227DB373500EBAB6A /* watchOS-Complication.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "watchOS-Complication.app";
+			remoteRef = E6D1B7A127DB373500EBAB6A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E6D1B7A427DB373500EBAB6A /* watchOS-Complication WatchKit App.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "watchOS-Complication WatchKit App.app";
+			remoteRef = E6D1B7A327DB373500EBAB6A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E6D1B7A627DB373500EBAB6A /* watchOS-Complication WatchKit Extension.appex */ = {
+			isa = PBXReferenceProxy;
+			fileType = "wrapper.app-extension";
+			path = "watchOS-Complication WatchKit Extension.appex";
+			remoteRef = E6D1B7A527DB373500EBAB6A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E6D59FD125260E8400054C51 /* Resources */ = {
