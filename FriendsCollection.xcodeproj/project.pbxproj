@@ -63,9 +63,6 @@
 		E64397902526731400FF8434 /* CharacterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPresenter.swift; sourceTree = "<group>"; };
 		E6B52A1A25270FE7001C7987 /* CharacterEditForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterEditForm.swift; sourceTree = "<group>"; };
 		E6D1B79B27DB373500EBAB6A /* watchOS-Complication.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "watchOS-Complication.xcodeproj"; path = "../../watchOS-Complication/watchOS-Complication.xcodeproj"; sourceTree = "<group>"; };
-		E6D1B7A727DB373500EBAB6A /* watchOS-Complication WatchKit App */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "watchOS-Complication WatchKit App"; sourceTree = "<group>"; };
-		E6D1B7A827DB373500EBAB6A /* watchOS-Complication WatchKit Extension */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "watchOS-Complication WatchKit Extension"; sourceTree = "<group>"; };
-		E6D1B7A927DB373500EBAB6A /* watchOS-Complication */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "watchOS-Complication"; sourceTree = "<group>"; };
 		E6D59FD325260E8400054C51 /* FriendsCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendsCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D59FD625260E8400054C51 /* FriendsCollectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCollectionApp.swift; sourceTree = "<group>"; };
 		E6D59FD825260E8400054C51 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,9 +109,6 @@
 		E6D1B79A27DB36BC00EBAB6A /* Example-SolarSystem */ = {
 			isa = PBXGroup;
 			children = (
-				E6D1B7A927DB373500EBAB6A /* watchOS-Complication */,
-				E6D1B7A727DB373500EBAB6A /* watchOS-Complication WatchKit App */,
-				E6D1B7A827DB373500EBAB6A /* watchOS-Complication WatchKit Extension */,
 				E6D1B79B27DB373500EBAB6A /* watchOS-Complication.xcodeproj */,
 			);
 			path = "Example-SolarSystem";
